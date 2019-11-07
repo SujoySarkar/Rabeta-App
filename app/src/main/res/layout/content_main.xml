@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+
+    <GridLayout
+        android:background="@drawable/corner"
+        android:id="@+id/mainGrid"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+
+
+
+        <!-- ROW 1  -->
+        <!-- COLUMN 1  -->
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="1dp"
+            android:layout_rowWeight="1"
+
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:background="#9C27B0"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <ImageView
+
+                    android:layout_gravity="center"
+                    android:src="@drawable/crown"
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:textAlignment="center"
+                    android:text="@string/asatija"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- COLUMN ramadan_shawal_c  -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/b2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="1dp"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="1dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:background="#F44336"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/certificate"
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:textAlignment="center"
+                    android:text="@string/abna"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- ROW ramadan_shawal_c  -->
+        <!-- COLUMN 1  -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="1dp"
+            android:layout_rowWeight="1"
+
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+
+            <LinearLayout
+
+                android:background="#F44336"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/conference"
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/contact_komiti"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- COLUMN ramadan_shawal_c  -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="1dp"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="1dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:background="#9C27B0"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/message"
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:textAlignment="center"
+                    android:text="@string/contact_jamat"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/b5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="1dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:background="#9C27B0"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/sear"
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:id="@+id/tv5"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/solutio"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- COLUMN ramadan_shawal_c  -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/b6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="1dp"
+            android:layout_rowWeight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="1dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:background="#F44336"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/magazine"
+
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/your_talk"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+</LinearLayout>
