@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "586155648889",
+    "firebase_url": "https://rabeta-a2825.firebaseio.com",
+    "project_id": "rabeta-a2825",
+    "storage_bucket": "rabeta-a2825.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586155648889:android:19c97c48e259ca5c4d31a8",
+        "android_client_info": {
+          "package_name": "com.onlinegfinfdghfrfgfbfevafran.rabetaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586155648889-slgss3isjudktrdce3nii52agfjj86m2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onlinegfinfdghfrfgfbfevafran.rabetaapp",
+            "certificate_hash": "db1173cf48fe321be8dee7575c247e3488382cd2"
+          }
+        },
+        {
+          "client_id": "586155648889-lghhu8gcno3gt70mrrobeset75hhag7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdXY7qV6jBMpsfZkCcrn5QEIEgcBjDg0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586155648889-lghhu8gcno3gt70mrrobeset75hhag7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rabeta App</string>
+    <string name="app_name">Rabeta</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -20,4 +20,11 @@
     <string name="contact_jamat">জামাত প্রতিনিধি</string>
     <string name="solutio"> তথ্য সংশোধন</string>
     <string name="your_talk">রাবেতা পত্রিকা</string>
+    <string name="your_talk1">রাবেতায়ে আবনায়ে রাহমানিয়া</string>
+
+
+    <string name="phonetime">ফোন করার সময়</string>
+    <string name="phonetime2">আছর - মাগরিব</string>
+
+
 </resources>

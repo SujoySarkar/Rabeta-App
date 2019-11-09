@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    android:clickable="true"
+    android:id="@+id/card55"
+    android:layout_marginBottom="5dp"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginStart="3dp"
+    android:layout_width="300dp"
+    android:layout_height="300dp">
+    <LinearLayout
+
+        android:padding="5dp"
+        android:layout_gravity="center"
+
+
+
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="168dp">
+        <ImageView
+            android:id="@+id/imageshowid4"
+            android:layout_marginBottom="2dp"
+
+            android:layout_gravity="center"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:contentDescription="todo">
+
+        </ImageView>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/roomdetailstextviewid4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:text="hi_afran"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+        </TextView>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/addresstextviewid4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#40EB0E"
+            android:text="uttara_gefggggggggggggggggggggggggggggggggg"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/phonetextviewid4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:text="01728381717"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/pricetextviewid4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#0EEBC6"
+            android:text="5000_taka"
+            android:layout_width="match_parent"
+            android:layout_height="18dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/datetextviewid4"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#009688"
+            android:text="Available"
+            android:layout_width="match_parent"
+            android:layout_height="19dp">
+
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

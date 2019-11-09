@@ -6,33 +6,44 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:icon="@drawable/delsix"
+            android:title="হোম" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:icon="@drawable/delsev"
+            android:title="রাবেতা পরিচিতি" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:icon="@drawable/delfive"
+            android:title="এলান" />
         <item
             android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
+            android:icon="@drawable/delfour"
+            android:title="সেটিংস" />
+
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/delthree"
+            android:title="রেটিং দিন" />
+
+        <item
+            android:id="@+id/nav_appshare"
+            android:icon="@drawable/deltwo"
+            android:title="অ্যাপ শেয়ার" />
+
+  <item
+            android:id="@+id/nav_opinion"
+            android:icon="@drawable/delone"
+            android:title="মতামত দিন" />
+ <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/del"
+            android:title="অ্যাপ সম্পর্কে" />
+
+
+
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
-        </menu>
-    </item>
+
 
 </menu>
