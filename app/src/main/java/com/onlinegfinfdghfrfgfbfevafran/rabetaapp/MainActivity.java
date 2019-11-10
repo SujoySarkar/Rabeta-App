@@ -11,17 +11,27 @@ import android.widget.LinearLayout;
 
 import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Book.Book;
 import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Button_5.Categori_5;
+import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Categori4.Categordi4;
 import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Categori_1.CategoriOne;
 import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Categori_3.Categori3;
 
 public class MainActivity extends AppCompatActivity {
-    Button b5, b6, b1,b3;
+    Button b5, b6, b1,b3,b4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().setTitle("রাবেতা");
+
+        b4=findViewById(R.id.btn4);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Categordi4.class);
+                startActivity(intent);
+            }
+        });
         //for card 3
         b3=findViewById(R.id.btn3);
         b3.setOnClickListener(new View.OnClickListener() {

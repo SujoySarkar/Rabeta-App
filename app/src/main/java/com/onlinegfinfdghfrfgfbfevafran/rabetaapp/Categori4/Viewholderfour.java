@@ -1,22 +1,32 @@
-package com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Categori_3;
+package com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Categori4;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
+import android.provider.Telephony;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.onlinegfinfdghfrfgfbfevafran.ViewHolder;
+import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Categori_3.Detailsssss;
 import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.R;
 import com.squareup.picasso.Picasso;
 
-public class Viewholdercat extends RecyclerView.ViewHolder {
+public class Viewholderfour extends RecyclerView.ViewHolder {
     View mView;
 
-    public Viewholdercat(@NonNull View itemView) {
+    public Viewholderfour(@NonNull View itemView) {
         super(itemView);
         mView = itemView;
 
@@ -41,21 +51,22 @@ public class Viewholdercat extends RecyclerView.ViewHolder {
 
 
     //set details to recycler view row
-    public void setDetails(Context ctx, String image01, String name01, String year01,String rule01, String number01){
+    public void setDetails(Context ctx, String image0q, String name0q, String year0q, String rule0q, String number0q){
         //Views(mtitletv
-        ImageView imgp = mView.findViewById(R.id.imagep);
-        TextView namp= mView.findViewById(R.id.namep);
-        TextView yearp = mView.findViewById(R.id.yearp);
-        TextView rulep = mView.findViewById(R.id.rulep);
-        TextView nump = mView.findViewById(R.id.numberp);
+        ImageView imgq = mView.findViewById(R.id.imageq);
+        TextView namq= mView.findViewById(R.id.nameq);
+        TextView yearq = mView.findViewById(R.id.yearq);
+        TextView ruleq = mView.findViewById(R.id.ruleq);
+        TextView numq = mView.findViewById(R.id.numberq);
+
 
 
         //set data to views
-        Picasso.get().load(image01).into(imgp);
-        namp.setText(name01);
-        yearp.setText(year01);
-        rulep.setText(rule01);
-        nump.setText(number01);
+        Picasso.get().load(image0q).into(imgq);
+        namq.setText(name0q);
+        yearq.setText(year0q);
+        ruleq.setText(rule0q);
+        numq.setText(number0q);
 
         //on click listener
 

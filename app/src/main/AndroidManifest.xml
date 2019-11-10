@@ -17,6 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Categori4.Detailsfour"></activity>
+        <activity android:name=".Categori4.Categordi4" />
         <activity android:name=".Categori_3.Detailsssss" />
         <activity android:name=".Categori_3.Categori3" />
         <activity android:name=".MainActivity">

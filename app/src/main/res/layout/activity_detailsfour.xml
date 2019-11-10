@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#fff"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="15dp"
+    tools:context=".Categori4.Detailsfour">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/image61"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+
+                android:scaleType="fitXY" />
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textColor="#3F51B5"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:id="@+id/name61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sujoy"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:textColor="#F10B59"
+                android:id="@+id/year61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2019"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:gravity="center"
+android:visibility="invisible"
+                android:textStyle="bold"
+                android:textColor="#F10B59"
+                android:id="@+id/rule61"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:text="chairman"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/phone61"
+                android:layout_width="match_parent"
+
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="01616368112"
+                android:textColor="#3F51B5"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/flot2"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_call_black_24dp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/flotmeg2"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_message__24dp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

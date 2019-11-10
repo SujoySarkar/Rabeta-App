@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    android:clickable="true"
+    android:id="@+id/card55"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:padding="5dp"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/conference"
+            android:id="@+id/imageq"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:contentDescription="todo">
+
+        </ImageView>
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/nameq"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#53E02C"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/yearq"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#1E8CB8"
+            android:text="2001"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/ruleq"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#AC0A0A"
+            android:text="vice chairman"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </TextView>
+
+
+        <TextView
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/numberq"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#AC0A0A"
+            android:text="01616368112"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </TextView>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
