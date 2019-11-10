@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Categori_1.CategoriOne">
+    tools:context=".Categori_3.Categori3">
     <FrameLayout
 
         android:layout_width="match_parent"

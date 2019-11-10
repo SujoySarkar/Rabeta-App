@@ -17,21 +17,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Categori_1.CategoriOne"></activity>
-        <activity android:name=".Book.Book" />
-        <activity android:name=".Button_6.Details" />
-        <activity android:name=".Button_6.Categori_6" />
-        <activity android:name=".Button_5.Categori_5" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Categori_3.Detailsssss" />
+        <activity android:name=".Categori_3.Categori3" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Categori_1.CategoriOne" />
+        <activity android:name=".Book.Book" />
+        <activity android:name=".Button_6.Details" />
+        <activity android:name=".Button_5.Categori_5" />
     </application>
 
 </manifest>

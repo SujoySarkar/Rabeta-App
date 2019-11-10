@@ -1,4 +1,4 @@
-package com.onlinegfinfdghfrfgfbfevafran;
+package com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Categori_3;
 
 import android.content.Context;
 import android.view.View;
@@ -8,17 +8,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
+import com.onlinegfinfdghfrfgfbfevafran.ViewHolder;
 import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.R;
 import com.squareup.picasso.Picasso;
 
-public class ViewHolder extends RecyclerView.ViewHolder{
-
+public class Viewholdercat extends RecyclerView.ViewHolder {
     View mView;
 
-    public ViewHolder(@NonNull View itemView) {
+    public Viewholdercat(@NonNull View itemView) {
         super(itemView);
-
         mView = itemView;
 
         //item click
@@ -37,26 +35,32 @@ public class ViewHolder extends RecyclerView.ViewHolder{
                 return true;
             }
         });
+
     }
 
 
     //set details to recycler view row
-    public void setDetails(Context ctx,String image00,String name00,String phoneo00,String phonet00){
+    public void setDetails(Context ctx, String image01, String name01, String year01,String rule01, String number01){
         //Views(mtitletv
-        TextView namemat= mView.findViewById(R.id.name9);
-        TextView phn1mat = mView.findViewById(R.id.numberone9);
-        TextView phn2mat = mView.findViewById(R.id.numbertwo9);
-        ImageView imgmat = mView.findViewById(R.id.imageshowid9);
+        ImageView imgp = mView.findViewById(R.id.imagep);
+        TextView namp= mView.findViewById(R.id.namep);
+        TextView yearp = mView.findViewById(R.id.yearp);
+        TextView rulep = mView.findViewById(R.id.rulep);
+        TextView nump = mView.findViewById(R.id.numberp);
+
 
         //set data to views
-        namemat.setText(name00);
-        phn1mat.setText(phoneo00);
-        phn2mat.setText(phonet00);
-        Picasso.get().load(image00).into(imgmat);
+        Picasso.get().load(image01).into(imgp);
+        namp.setText(name01);
+        yearp.setText(year01);
+        rulep.setText(rule01);
+        nump.setText(number01);
+
+
 
     }
 
-    private ClickListener mClickListener;
+    private ViewHolder.ClickListener mClickListener;
 
     //interface to send callbacks
     public interface ClickListener{
@@ -64,7 +68,7 @@ public class ViewHolder extends RecyclerView.ViewHolder{
         void onItemLongClick(View view, int position);
     }
 
-    public void setOnClickListener(ClickListener clickListener){
+    public void setOnClickListener(ViewHolder.ClickListener clickListener){
         mClickListener = clickListener;
     }
 }

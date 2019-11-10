@@ -1,48 +1,42 @@
-package com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Button_6;
+package com.onlinegfinfdghfrfgfbfevafran.rabetaapp.Categori_3;
 
-        import androidx.annotation.NonNull;
-        import androidx.appcompat.app.ActionBar;
-        import androidx.appcompat.app.AppCompatActivity;
-        import androidx.core.app.ActivityCompat;
-        import androidx.core.content.ContextCompat;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
-        import android.Manifest;
-        import android.content.Intent;
-        import android.content.pm.PackageManager;
-        import android.graphics.Bitmap;
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.provider.Telephony;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-        import android.net.Uri;
-        import android.os.Build;
-        import android.os.Bundle;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-        import android.provider.Telephony;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.ImageView;
-        import android.widget.TextView;
-        import android.widget.Toast;
+import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.R;
+import com.squareup.picasso.Picasso;
 
-
-        import com.google.android.material.floatingactionbutton.FloatingActionButton;
-        import com.onlinegfinfdghfrfgfbfevafran.rabetaapp.R;
-        import com.squareup.picasso.Picasso;
-
+public class Detailsssss extends AppCompatActivity {
 
 
-public class Details extends AppCompatActivity {
-
-    TextView ldetails, laddress,lprice,lphone,Pdate;
-    ImageView mImageIv;
+    TextView name61, year61,rule61,number61;
+    ImageView image61;
     Bitmap bitmap;
-    FloatingActionButton fab,fab2,fab3,fab4;
+    FloatingActionButton fab3,fab4;
     private static final int REQUEST_CALL = 1;
 
     private static final int WRITE_EXTERNAL_STORAGE_CODE = 1;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
         ActionBar actionBar = getSupportActionBar();
         //Actionbar title
@@ -50,24 +44,30 @@ public class Details extends AppCompatActivity {
         //set back button in action bar
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
-        setContentView(R.layout.activity_details);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_detailsssss);
+
+
+
 
 
 
         //initialize views
+        image61= findViewById(R.id.image61);
+        name61 = findViewById(R.id.name61);
+        year61= findViewById(R.id.year61);
+         rule61= findViewById(R.id.rule61);
+         number61= findViewById(R.id.phone61);
 
-        laddress = findViewById(R.id.address60);
-        lphone = findViewById(R.id.phone60);
-        lprice = findViewById(R.id.price60);
 
-        mImageIv = findViewById(R.id.image60);
 
 
         //get data from intent
-        String image = getIntent().getStringExtra("image");
-        String address2 = getIntent().getStringExtra("add1");
-        String phone2 = getIntent().getStringExtra("phn1");
-        String price2 = getIntent().getStringExtra("pri1");
+        String imagess = getIntent().getStringExtra("im7");
+        String namess = getIntent().getStringExtra("nam7");
+        String yearss = getIntent().getStringExtra("year7");
+        String ruless = getIntent().getStringExtra("rule7");
+        String numberss = getIntent().getStringExtra("num7");
 
 
 ///////////////////////////fab 2 call
@@ -79,17 +79,8 @@ public class Details extends AppCompatActivity {
             }
         });
 
-        ///////////
-        fab2=findViewById(R.id.flotmeg1);
-        fab2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                message();
-            }
 
 
-        });
 /////fab4 meg
         fab4=findViewById(R.id.flotmeg2);
         fab4.setOnClickListener(new View.OnClickListener() {
@@ -102,25 +93,19 @@ public class Details extends AppCompatActivity {
         });
         ////////////////////
         //set data to views
+        Picasso.get().load(imagess).into(image61);
+        name61.setText(namess);
+        year61.setText(yearss);
+        rule61.setText(ruless);
+        number61.setText(numberss);
 
-        laddress.setText(address2);
-        lphone.setText(phone2);
-        lprice.setText(price2);
 
-        Picasso.get().load(image).into(mImageIv);
 
-        String gg=lphone.getText().toString().trim();
+        String gg=number61.getText().toString().trim();
 
 
 
 //floating action button for call 1
-        fab=findViewById(R.id.flot1);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                makePhoneCall();
-            }
-        });
 
 
 
@@ -144,7 +129,7 @@ public class Details extends AppCompatActivity {
 
     private void message2() {
 
-        String number3 = lprice.getText().toString();
+        String number3 = number61.getText().toString();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) // At least KitKat
         {
             String defaultSmsPackageName = Telephony.Sms.getDefaultSmsPackage(this); // Need to change the build to API 19
@@ -174,12 +159,12 @@ public class Details extends AppCompatActivity {
 
     private void makePhoneCallfab2() {
 
-        String number1 = lprice.getText().toString();
+        String number1 = number61.getText().toString();
         if (number1.trim().length() > 0) {
 
-            if (ContextCompat.checkSelfPermission(Details.this,
+            if (ContextCompat.checkSelfPermission(Detailsssss.this,
                     Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(Details.this,
+                ActivityCompat.requestPermissions(Detailsssss.this,
                         new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL);
             } else {
 
@@ -196,7 +181,7 @@ public class Details extends AppCompatActivity {
     //////////
     private void message() {
 
-        String number = lphone.getText().toString();
+        String number = number61.getText().toString();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) // At least KitKat
         {
             String defaultSmsPackageName = Telephony.Sms.getDefaultSmsPackage(this); // Need to change the build to API 19
@@ -226,12 +211,12 @@ public class Details extends AppCompatActivity {
 
     private void makePhoneCall() {
 
-        String number = lphone.getText().toString();
+        String number = number61.getText().toString();
         if (number.trim().length() > 0) {
 
-            if (ContextCompat.checkSelfPermission(Details.this,
+            if (ContextCompat.checkSelfPermission(Detailsssss.this,
                     Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(Details.this,
+                ActivityCompat.requestPermissions(Detailsssss.this,
                         new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL);
             } else {
 
@@ -271,3 +256,6 @@ public class Details extends AppCompatActivity {
 
     }
 }
+
+
+

@@ -18,7 +18,7 @@
 
         <ImageView
             android:src="@drawable/conference"
-            android:id="@+id/imageshowid9"
+            android:id="@+id/imagep"
             android:layout_width="65dp"
             android:layout_height="55dp"
             android:layout_gravity="center"
@@ -29,12 +29,12 @@
         <TextView
             android:gravity="center"
             android:layout_gravity="center"
-           android:layout_marginBottom="1dp"
-            android:id="@+id/name9"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/namep"
             android:textSize="23sp"
             android:textStyle="bold"
             android:textColor="#53E02C"
-            android:text="hi_fgklfjklfjklgjklfgjklfjklgjklafran"
+            android:text="Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -44,29 +44,45 @@
         <TextView
             android:gravity="center"
             android:layout_gravity="center"
-           android:layout_marginBottom="1dp"
-            android:id="@+id/numberone9"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/yearp"
             android:textSize="23sp"
             android:textStyle="bold"
             android:textColor="#1E8CB8"
-            android:text="hi_fgklfjklfjklgjklfgjklfjklgjklafran"
+            android:text="2001"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         </TextView>
 
 
-         <TextView
+        <TextView
             android:gravity="center"
             android:layout_gravity="center"
-           android:layout_marginBottom="1dp"
-            android:id="@+id/numbertwo9"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/rulep"
             android:textSize="23sp"
             android:textStyle="bold"
             android:textColor="#AC0A0A"
-            android:text="hi_fgklfjklfjklgjklfgjklfjklgjklafran"
+            android:text="vice chairman"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/numberp"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#AC0A0A"
+            android:text="01616368112"
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
 
         </TextView>
 
